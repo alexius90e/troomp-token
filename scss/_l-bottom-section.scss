@@ -1,0 +1,46 @@
+.bottom-section {
+  & .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__troomp {
+    &:first-of-type {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &:last-of-type {
+      transform: scale(-1, 1);
+
+      @include tablet {
+        transform: scale(-1, 1) rotate(-90deg);
+      }
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__flag {
+    @include tablet {
+      max-height: 500px;
+      overflow: hidden;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

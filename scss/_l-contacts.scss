@@ -79,11 +79,12 @@
       height: 64px;
       width: 108px;
       background: url(../assets/social-link-bg.svg);
-      transition: transform ease-in-out 0.14s;
-      will-change: transform;
+      transition: transform ease-in-out 0.14s, box-shadow ease-in-out 0.2s;
+      will-change: transform, box-shadow;
       cursor: pointer;
 
       &:hover {
+        box-shadow: 6px 6px 0px #0c0f22;
         transform: scale(1.04);
       }
 
@@ -126,8 +127,8 @@
         font-weight: 400;
         font-size: 24px;
         color: $lightGreen;
-        transition: transform ease-in-out 0.14s;
-        will-change: transform;
+        transition: text-shadow ease-in-out 0.14s;
+        will-change: text-shadow;
         cursor: pointer;
 
         @include mobile {
@@ -135,11 +136,7 @@
         }
 
         &:hover {
-          transform: scale(1.02);
-        }
-
-        &:active {
-          transform: scale(1);
+          text-shadow: 4px 4px 0px #0c0f22;
         }
       }
     }
