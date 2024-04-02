@@ -1,7 +1,7 @@
 .footer {
   padding: 42px 0;
 
-  @include laptop {
+  @include tablet {
     padding: 24px 0;
   }
 

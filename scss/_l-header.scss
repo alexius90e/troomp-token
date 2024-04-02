@@ -2,7 +2,7 @@
   padding: 42px 0;
   color: $white;
 
-  @include laptop {
+  @include tablet {
     padding: 24px 0;
   }
 
