@@ -1,0 +1,150 @@
+.contacts {
+  & .container {
+    display: flex;
+    gap: 24px;
+
+    @include laptop {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__love {
+    flex: 0 0 324px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: $yellow;
+
+    @include laptop {
+      flex: 1 1 100%;
+      flex-wrap: wrap;
+      padding-top: 24px;
+    }
+
+    &-image {
+      max-width: 92%;
+
+      @include laptop {
+        max-height: 360px;
+      }
+    }
+  }
+
+  &__social {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: $black;
+
+    @include laptop {
+      flex: 0 0 calc(50% - 12px);
+    }
+
+    @include tablet {
+      flex: 1 1 100%;
+    }
+
+    &-poom {
+      display: flex;
+      justify-content: center;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+        @include tablet {
+          width: 360px;
+        }
+      }
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 320px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 64px;
+      width: 108px;
+      background: url(../assets/social-link-bg.svg);
+
+      &::before {
+        content: '';
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &_x::before {
+        background-image: url(../assets/x-icon.svg);
+      }
+
+      &_tg::before {
+        background-image: url(../assets/tg-icon.svg);
+      }
+
+      &_dextools::before {
+        background-image: url(../assets/dextools-icon.svg);
+      }
+
+      &_descreener::before {
+        background-image: url(../assets/descreener.svg);
+      }
+    }
+
+    &-email {
+      text-align: center;
+
+      &-link {
+        font-weight: 400;
+        font-size: 24px;
+        color: $lightGreen;
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &__king {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $violet;
+
+    @include laptop {
+      flex: 0 0 calc(50% - 12px);
+    }
+
+    @include tablet {
+      flex: 1 1 100%;
+      padding: 24px;
+    }
+
+    &-image {
+      max-width: 90%;
+
+      @include tablet {
+        max-width: 100%;
+        max-height: 320px;
+      }
+    }
+  }
+}
