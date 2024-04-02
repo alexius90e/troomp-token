@@ -79,6 +79,17 @@
       height: 64px;
       width: 108px;
       background: url(../assets/social-link-bg.svg);
+      transition: transform ease-in-out 0.14s;
+      will-change: transform;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.04);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
 
       &::before {
         content: '';
@@ -111,12 +122,24 @@
       text-align: center;
 
       &-link {
+        display: inline-block;
         font-weight: 400;
         font-size: 24px;
         color: $lightGreen;
+        transition: transform ease-in-out 0.14s;
+        will-change: transform;
+        cursor: pointer;
 
         @include mobile {
           font-size: 20px;
+        }
+
+        &:hover {
+          transform: scale(1.02);
+        }
+
+        &:active {
+          transform: scale(1);
         }
       }
     }
