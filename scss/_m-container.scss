@@ -10,6 +10,7 @@
   }
 
   @include tablet {
-    max-width: 576px;
+    max-width: 520px;
+    padding: 0 24px;
   }
 }

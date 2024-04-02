@@ -1,3 +1,37 @@
 .first-line {
-  
+  & .container {
+    display: flex;
+    gap: 24px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__figure {
+    flex: 0 0 calc(50% - 12px);
+
+    &-image {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    flex: 0 0 calc(50% - 12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    color: $white;
+    background-color: $red;
+
+    @include laptop {
+      font-size: 20px;
+    }
+  }
 }
