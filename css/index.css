@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Pixelony";
+  src: url("../fonts/pixelony.regular.ttf") format("truetype");
+}
+html {
+  font-size: 16px;
+  font-family: "Pixelony", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  overflow-y: scroll;
+  color: #ffffff;
+  background-color: #4a2f91;
+}
+
+a,
+button,
+input,
+textarea {
+  font-family: "Pixelony", sans-serif;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+.header {
+  padding: 43px 0;
+  color: #ffffff;
+}
+@media (max-width: 992px) {
+  .header {
+    padding: 32px 0;
+  }
+}
+.header__title {
+  margin: 0 0 16px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .header__title {
+    margin: 0 0 10px;
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 36px;
+  }
+}
+.header__title span {
+  font-size: 1.2em;
+}
+.header__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .header__description {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header__description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .header__description {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

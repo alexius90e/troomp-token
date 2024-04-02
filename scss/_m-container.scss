@@ -1,0 +1,15 @@
+.container {
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+
+  @include laptop {
+    max-width: 768px;
+  }
+
+  @include tablet {
+    max-width: 576px;
+  }
+}
