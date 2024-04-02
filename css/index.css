@@ -229,7 +229,7 @@ img {
   padding: 24px 12px;
   font-weight: 400;
   font-size: 19px;
-  line-height: 100%;
+  line-height: 170%;
   overflow-wrap: break-word;
   background-color: #7646f6;
 }
@@ -280,7 +280,18 @@ img {
   border: none;
   background: url(../assets/copy-icon.svg) center no-repeat;
   background-size: contain;
+  transition: transform ease-in-out 0.14s;
+  will-change: transform;
   cursor: pointer;
+}
+.buy-token__token-code-button:hover {
+  transform: scale(1.1);
+}
+.buy-token__token-code-button:active {
+  transform: scale(1);
+}
+.buy-token__token-code-button.active {
+  background-image: url(../assets/ok.svg);
 }
 .buy-token__token-figure {
   flex: 1 1 auto;

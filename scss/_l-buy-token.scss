@@ -65,7 +65,7 @@
       padding: 24px 12px;
       font-weight: 400;
       font-size: 19px;
-      line-height: 100%;
+      line-height: 170%;
       overflow-wrap: break-word;
       background-color: $violet;
 
@@ -98,6 +98,7 @@
         margin-top: 2px;
         margin-left: 4px;
         margin-right: 12px;
+        
 
         @include tablet {
           margin: 0;
@@ -113,7 +114,21 @@
         border: none;
         background: url(../assets/copy-icon.svg) center no-repeat;
         background-size: contain;
+        transition: transform ease-in-out 0.14s;
+        will-change: transform;
         cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &:active {
+          transform: scale(1);
+        }
+
+        &.active {
+          background-image: url(../assets/ok.svg);
+        }
       }
     }
 
