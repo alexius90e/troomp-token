@@ -1,3 +1,18 @@
 .footer {
+  padding: 42px 0;
 
+  @include laptop {
+    padding: 24px 0;
+  }
+
+  & .container {
+    color: $white;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+
+    @include laptop {
+      font-size: 20px;
+    }
+  }
 }
